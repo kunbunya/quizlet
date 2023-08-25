@@ -11,7 +11,7 @@ let lists = [
 let res1 = (array) => {
   let result = undefined;
   //write code something
-
+  result = array.sort((a, b) => b-a);
   
   // end write code something
   return result;
@@ -21,8 +21,9 @@ let res1 = (array) => {
 let res2 = (array) => {
   let result = undefined;
   //write code something
+  let result1 = array.sort((a, b) => b-a);
+  result = result1.reverse();
 
-  
   // end write code something
   return result;
 };
@@ -31,8 +32,14 @@ let res2 = (array) => {
 let res3 = (lists) => {
   let result = undefined;
   //write code something
+  let m = null;
+  for (const x of lists) {
+    const n = (m == null) ? m = x.id : ((x.id < m) ? m = x.id : m)
+    result = n;
+  }
+  let c = lists.filter((list) => list.id == result);
+  result = c[0].name;
 
-  
   // end write code something
   return result;
 };
@@ -41,8 +48,14 @@ let res3 = (lists) => {
 let res4 = (lists) => {
   let result = undefined;
   //write code something
+  let m = null;
+  for (const x of lists) {
+    const n = (m == null) ? m = x.id : ((x.id > m) ? m = x.id : m)
+    result = n;
+  }
+  let c = lists.filter((list) => list.id == result);
+  result = c[0].name;
 
-  
   // end write code something
   return result;
 };
