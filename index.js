@@ -12,6 +12,7 @@ let res1 = (array) => {
   let result = undefined;
   //write code something
 
+  
   // end write code something
   return result;
 };
@@ -21,6 +22,7 @@ let res2 = (array) => {
   let result = undefined;
   //write code something
 
+  
   // end write code something
   return result;
 };
@@ -30,6 +32,7 @@ let res3 = (lists) => {
   let result = undefined;
   //write code something
 
+  
   // end write code something
   return result;
 };
@@ -39,6 +42,7 @@ let res4 = (lists) => {
   let result = undefined;
   //write code something
 
+  
   // end write code something
   return result;
 };
